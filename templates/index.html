@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/ecommerceicon.png">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Basic E-Commerce shop for PLD</h1>
+    <div id="ecommerce">
+        <section id="goods-section">
+            <h2>Goods</h2>
+            <ul id="product-list"></ul>
+            <h3>Add goods</h3>
+            <input type="text" id="product-name-input" placeholder="Name of the goods">
+            <input type="number" id="product-price-input" placeholder="Price of the goods">
+            <button onclick="addGoods()">Add goods</button>
+        </section>
+        <section id="users-section">
+            <h2>Users</h2>
+            <ul id="client-list"></ul>
+            <h3>Add new user</h3>
+            <input type="text" id="client-name-input" placeholder="User's name">
+            <input type="email" id="client-email-input" placeholder="User's email">
+            <button onclick="addUser()">Add user</button>
+        </section>
+        <section id="cart-section">
+            <h2>Cart</h2>
+            <select id="client-select">
+                <option value="" disabled selected>Choose a buyer</option>
+            </select>
+            <select id="product-select">
+                <option value="" disabled selected>Choose goods</option>
+            </select>
+            <button onclick="addToCart()">Add to cart</button>
+            <button onclick="checkout()">Checkout</button>
+            <ul id="cart-list"></ul>
+        </section>
+        <section id="orders-section">
+            <h2>Orders</h2>
+            <ul id="order-list"></ul>
+        </section>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
