@@ -1,1 +1,90 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+h1 {
+    font-size: 3em;
+    margin: 40px 0;
+    color: #740c0c;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+#ecommerce {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+h3 {
+    margin-top: 5px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+
+#goods-section h2 {
+    color: #5d0707;
+}
+
+#users-section h2 {
+    color: rgb(35, 35, 158);
+}
+
+#cart-section h2 {
+    color: aquamarine;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    background-color: crimson;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(175, 10, 43);
+}
+
+#cart-section button:first-of-type {
+    margin-bottom: 20px;
+}
